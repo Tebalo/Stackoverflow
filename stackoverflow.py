@@ -1,7 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
-res = requests.get("https://stackoverflow.com/questions")
 import json
+
+res = requests.get("https://stackoverflow.com/questions")
+
 
 soup = BeautifulSoup(res.text,'html.parser')
 
